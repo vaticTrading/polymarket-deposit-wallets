@@ -51,30 +51,3 @@ npm install
 cp .env.example .env
 npm run 1
 ```
-
-## Manual upload to GitHub (no CLI auth needed)
-
-### Option A: Upload files directly in GitHub web UI
-
-1. Create a new empty GitHub repository in your browser.
-2. Open the new repo page.
-3. Click **Add file** -> **Upload files**.
-4. Drag and drop everything inside this folder:
-   - `deposit_wallets/`
-   - `deposit_wallets_ts/`
-   - `.gitignore`
-   - `README.md`
-5. Add commit message: `Initial deposit wallet examples (py + ts)`.
-6. Click **Commit changes**.
-
-### Option B: Upload a ZIP from browser
-
-1. Zip this folder (`deposit_wallets_combined_repo`).
-2. In GitHub, open your new empty repo.
-3. Use **Add file** -> **Upload files** and drop the extracted files (or upload file sets in batches).
-4. Commit from the web UI.
-
-## Notes
-
-- Do not upload real private keys or `.env` values.
-- Existing proxy/Safe users are not modified by this demo; this is the deposit wallet path for new API users.
