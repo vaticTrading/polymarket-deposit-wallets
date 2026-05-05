@@ -1,0 +1,18 @@
+# Deposit wallet flow — Polymarket CLOB V2 + relayer
+# Install: pip install -r requirements.txt
+
+# Relayer client with deposit wallet support
+py-builder-relayer-client==0.0.2rc1
+
+# CLOB client with POLY_1271 (signatureType=3) support
+py-clob-client-v2==1.0.1rc1
+
+# Ethereum / ABI utilities
+web3>=6.0.0
+eth-abi>=4.0.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# HTTP (usually pulled in by web3, listed for clarity)
+requests>=2.28.0

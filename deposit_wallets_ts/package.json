@@ -1,0 +1,35 @@
+{
+  "name": "deposit-wallets-ts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "1": "tsx 1_rpc.ts",
+    "2": "tsx 2_deploy_wallet.ts",
+    "3": "tsx 3_wrap.ts",
+    "4": "tsx 4_allowances.ts",
+    "5": "tsx 5_init_clob.ts",
+    "6": "tsx 6_limit_buy_order.ts",
+    "7": "tsx 7_market_buy_order.ts",
+    "8": "tsx 8_market_sell_order.ts",
+    "9": "tsx 9_limit_sell.ts",
+    "10": "tsx 10_split.ts",
+    "11": "tsx 11_merge.ts",
+    "12": "tsx 12_offramp.ts"
+  },
+  "dependencies": {
+    "@polymarket/builder-relayer-client": "^0.0.9",
+    "@polymarket/builder-signing-sdk": "0.0.8",
+    "@polymarket/clob-client-v2": "latest",
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.0"
+  },
+  "overrides": {
+    "@polymarket/builder-signing-sdk": "0.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
